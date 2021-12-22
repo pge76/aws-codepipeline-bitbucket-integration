@@ -36,7 +36,7 @@ Parameters:
   S3BucketCodePipelineName:
     Type: String 
     Description: S3 bucket name to store the Bitbucket repository content
-    AllowedPattern: '^[a-z]*$'
+    AllowedPattern: '^[a-z-]*$'
     ConstraintDescription: This field should contain only lower case characters
   VPCID:
     Type: AWS::EC2::VPC::Id

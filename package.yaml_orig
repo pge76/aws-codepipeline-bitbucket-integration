@@ -38,7 +38,7 @@ Parameters:
   S3BucketCodePipelineName:
     Type: String
     Description: S3 bucket name to store the Bitbucket repository content
-    AllowedPattern: ^[a-z-]*$
+    AllowedPattern: ^[a-z]*$
     ConstraintDescription: This field should contain only lower case characters
   VPCID:
     Type: AWS::EC2::VPC::Id
@@ -173,8 +173,8 @@ Resources:
         - IamRoleLambdaFunction
         - Arn
       Code:
-        S3Bucket: campeleon-cloudformation
-        S3Key: d168ccea4ac8cd2d898896097b912a7a
+        S3Bucket: lexlabs3bucketmgmtapps
+        S3Key: f4a779b4953357ca1517a6a0e76994f4
       Runtime: nodejs14.x
       Timeout: '30'
       VpcConfig:
@@ -279,7 +279,3 @@ Outputs:
       Fn::GetAtt:
       - Alb
       - DNSName
-  EndpointUrlApiGw:
-    Condition: EndpointTypeAPIGW
-    Value:
-      Fn::Sub: https://${RestApi}.execute-api.${AWS::Region}.amazonaws.com/prod/

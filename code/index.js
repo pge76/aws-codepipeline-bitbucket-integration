@@ -94,6 +94,8 @@ function normalizeObject(inputObject) {
 async function downloadFile(repoConfig, proxy) {
     console.log('info', '>>> downloadFile()');
     console.log(`proxy: ${JSON.stringify(proxy)}`);
+    console.log('url', `/rest/api/latest/projects/${repoConfig.projectName}/repos/${repoConfig.repoName}/archive?at=refs/heads/${repoConfig.branch}&format=zip`);
+
 
     const params = {
         proxy,

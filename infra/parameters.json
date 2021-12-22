@@ -1,23 +1,23 @@
 [
   {
     "ParameterKey": "BitbucketSecret",
-    "ParameterValue": ""
+    "ParameterValue": "itsasecret"
   },
   {
     "ParameterKey": "BitbucketServerUrl",
-    "ParameterValue": ""
+    "ParameterValue": "https://code.impaq.de/"
   },
   {
     "ParameterKey": "BitbucketToken",
-    "ParameterValue": ""
+    "ParameterValue": "NDg5MTM4MDk1OTQ5On6gi1h4ASU+axwSQ7/rdWxgv1ms"
   },
   {
     "ParameterKey": "EndpointType",
-    "ParameterValue": ""
+    "ParameterValue": "API Gateway"
   },
   {
     "ParameterKey": "LBSubnets",
-    "ParameterValue": ""
+    "ParameterValue": "subnet-055490cb001807499"
   },
   {
     "ParameterKey": "LBSSLCertificateArn",
@@ -29,15 +29,15 @@
   },
   {
     "ParameterKey": "LambdaSubnets",
-    "ParameterValue": ""
+    "ParameterValue": "subnet-055490cb001807499"
   },
   {
     "ParameterKey": "S3BucketCodePipelineName",
-    "ParameterValue": ""
+    "ParameterValue": "campeleon-deploy"
   },
   {
     "ParameterKey": "VPCID",
-    "ParameterValue": ""
+    "ParameterValue": "vpc-0942b4000db0e560a"
   },
   {
     "ParameterKey": "WebProxyHost",
